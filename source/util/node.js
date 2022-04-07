@@ -6,6 +6,7 @@ class Node {
   constructor(data) {
     this.data = data;
     this.adjacents = [];
+    this.paket = 0;
   }
 
   addAdjacent(node) {
@@ -31,6 +32,10 @@ class Node {
 
   getData() {
     return this.data;
+  }
+
+  getPaket() {
+    return this.paket;
   }
 }
 
