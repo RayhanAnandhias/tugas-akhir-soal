@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const router = require("./route/index");
 
 const app = express();
 
@@ -14,6 +15,8 @@ const corsOptionDelegate = (req, callback) => {
 };
 
 app.use(cors(corsOptionDelegate));
+
+app.use("/fisher-yates", router.fisherYates);
 
 app.use((error, req, res, next) => {
   console.log("Ada Error ");
