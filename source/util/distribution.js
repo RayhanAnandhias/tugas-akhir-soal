@@ -32,8 +32,9 @@ const graphModelling = (baris, kolom, jarakBaris, jarakKolom) => {
  * @returns {number}
  */
 const graphColoring = (digraph) => {
-  // sort node descending by degree
   const vertexOrder = [];
+
+  // sort node descending by degree
   new Map(
     [...digraph.nodes].sort(
       (a, b) => b[1].adjacents.length - a[1].adjacents.length
@@ -44,6 +45,7 @@ const graphColoring = (digraph) => {
 
   const colorIndex = {};
   let currentColor = 0;
+
   while (vertexOrder.length > 0) {
     const root = vertexOrder.shift();
     colorIndex[root] = currentColor;
@@ -78,7 +80,21 @@ const graphColoring = (digraph) => {
     currentColor++;
   }
 
-  console.log(colorIndex);
+  for (let [key, value] of digraph.nodes) {
+    value.paket = colorIndex[value.data];
+  }
+
+  const arrColor = Object.values(colorIndex);
+  const maxColor = Math.max(...arrColor);
+
+  const result = {
+    chromaticNumber: maxColor + 1,
+    graph: digraph
+  };
+
+  console.log(result);
+
+  return result;
 };
 
 // graphModelling(3, 4, 110, 110);

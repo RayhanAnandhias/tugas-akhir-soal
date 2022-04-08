@@ -9,10 +9,18 @@ class Node {
     this.paket = 0;
   }
 
+  /**
+   *
+   * @param {Node} node
+   */
   addAdjacent(node) {
     this.adjacents.push(node);
   }
 
+  /**
+   *
+   * @param {Node} node
+   */
   removeAdjacent(node) {
     const idx = this.adjacents.indexOf(node);
     if (idx !== -1) {
@@ -22,18 +30,34 @@ class Node {
     return null;
   }
 
+  /**
+   *
+   * @param {Node} node
+   */
   isAdjacent(node) {
     return this.adjacents.indexOf(node) !== -1;
   }
 
+  /**
+   *
+   * @param {Node} node
+   */
   getAdjacents() {
     return this.adjacents;
   }
 
+  /**
+   *
+   * @param {Node} node
+   */
   getData() {
     return this.data;
   }
 
+  /**
+   *
+   * @param {Node} node
+   */
   getPaket() {
     return this.paket;
   }
