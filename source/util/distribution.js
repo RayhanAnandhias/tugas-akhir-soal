@@ -29,7 +29,7 @@ const graphModelling = (baris, kolom, jarakBaris, jarakKolom) => {
 /**
  *
  * @param {Digraph} digraph
- * @returns {number}
+ * @returns {*}
  */
 const graphColoring = (digraph) => {
   const vertexOrder = [];
