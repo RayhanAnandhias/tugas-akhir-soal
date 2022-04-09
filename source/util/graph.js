@@ -116,6 +116,10 @@ class Digraph {
       return null;
     }
   }
+
+  toStringNodes() {
+    console.log([...this.nodes.entries()]);
+  }
 }
 
 module.exports = Digraph;
