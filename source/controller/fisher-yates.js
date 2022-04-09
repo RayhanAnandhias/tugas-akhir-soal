@@ -1,4 +1,4 @@
-const {simulateNTimes, simulateOnce, acakSoal} = require("../util/acak_soal");
+const {simulateNTimes, simulateOnce, acakSoal, acakSoalNTimes} = require("../util/acak_soal");
 
 exports.simulateOnce = async (req, res, next) => {
     try{
@@ -33,6 +33,20 @@ exports.acakSoal = async (req, res, next) => {
         const hasilSimulasi = acakSoal(listSoal, panjangBaris * panjangKolom);
         res.status(200).json({
             message: `Berhasil melakukan pengacakan soal murni Fisher Yates`,
+            data: hasilSimulasi
+        });
+    }catch(err){
+        next(err);
+    }
+}
+
+exports.acakSoalNTimes = async (req, res, next) => {
+    try{
+        const { panjangBaris, panjangKolom, listSoal, jumlahPercobaan } = req.body;
+        console.log("acak soal");
+        const hasilSimulasi = acakSoalNTimes(listSoal, panjangBaris * panjangKolom, jumlahPercobaan);
+        res.status(200).json({
+            message: `Berhasil melakukan pengacakan soal murni Fisher Yates sebanyak ${jumlahPercobaan}`,
             data: hasilSimulasi
         });
     }catch(err){

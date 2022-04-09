@@ -11,4 +11,6 @@ router.post("/simulate", validator.simulateNTimesValidator(), validation, contro
 
 router.post("/acak-soal", validator.acakSoal(), validation, controller.acakSoal);
 
+router.post("/acak-percobaan", validator.acakSoalNTimes(), validation, controller.acakSoalNTimes);
+
 module.exports = router;

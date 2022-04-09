@@ -111,10 +111,10 @@ const simulateNTimes = (panjangSoal, jumlahPaket, jumlahPercobaan) => {
 }
 
 const acakSoal = (listSoal, jumlahPaket) => {
-  const listPaket = [];
-  for (let i = 0; i < jumlahPaket; i++) {
-    listPaket.push(shuffle(listSoal));
-  }
+  const listPaket = shuffleSoalNTimes(jumlahPaket, listSoal);
+  // for (let i = 0; i < jumlahPaket; i++) {
+  //   listPaket.push(shuffle(listSoal));
+  // }
   const persentaseKeunikan = hitungKeunikan(listPaket, (soal1, soal2) => soal1.id == soal2.id);
   const listPaketNomor = [];
   listPaket.forEach(paket => {
@@ -131,8 +131,17 @@ const acakSoal = (listSoal, jumlahPaket) => {
   }
 }
 
+const acakSoalNTimes = (listSoal, jumlahPaket, jumlahPercobaan) => {
+  const listOfListPaket = createListOfListPaket(listSoal, jumlahPaket, jumlahPercobaan);
+  const persentaseKeunikan = hitungRatarataKeunikan(listOfListPaket, (soal1, soal2) => soal1.id == soal2.id); 
+  return {
+    dataKeunikan: persentaseKeunikan
+  };
+}
+
 module.exports = {
   simulateOnce,
   simulateNTimes,
-  acakSoal
+  acakSoal,
+  acakSoalNTimes
 }

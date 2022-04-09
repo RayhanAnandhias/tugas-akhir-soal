@@ -17,6 +17,7 @@ const corsOptionDelegate = (req, callback) => {
 app.use(cors(corsOptionDelegate));
 
 app.use("/fisher-yates", router.fisherYates);
+app.use("/main-process", router.mainProcess);
 
 app.use((error, req, res, next) => {
   console.log("Ada Error ");
