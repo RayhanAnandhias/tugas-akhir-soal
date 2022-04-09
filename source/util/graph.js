@@ -118,7 +118,7 @@ class Digraph {
   }
 
   toStringNodes() {
-    return "";
+    return [...this.nodes.entries()];
   }
 }
 

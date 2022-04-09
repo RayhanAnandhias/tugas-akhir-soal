@@ -14,7 +14,7 @@ class Node {
    * @param {Node} node
    */
   addAdjacent(node) {
-    this.adjacents.push(node);
+    this.adjacents.push(node.data);
   }
 
   /**
@@ -22,7 +22,7 @@ class Node {
    * @param {Node} node
    */
   removeAdjacent(node) {
-    const idx = this.adjacents.indexOf(node);
+    const idx = this.adjacents.indexOf(node.data);
     if (idx !== -1) {
       this.adjacents.splice(idx, 1);
       return node;
@@ -35,7 +35,7 @@ class Node {
    * @param {Node} node
    */
   isAdjacent(node) {
-    return this.adjacents.indexOf(node) !== -1;
+    return this.adjacents.indexOf(node.data) !== -1;
   }
 
   /**

@@ -5,12 +5,12 @@ const router = require("./route/index");
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 const corsOptionDelegate = (req, callback) => {
   callback(null, {
     origin: req.header("Origin"),
-    credentials: true,
+    credentials: true
   });
 };
 
@@ -27,15 +27,15 @@ app.use((error, req, res, next) => {
   res.status(status).json({
     message: message,
     error: status,
-    cause: cause,
+    cause: cause
   });
 });
 
-app.use("*" , (req, res) => {
-    res.json({
-     message: "error unknown path"   
-    });
-})
+app.use("*", (req, res) => {
+  res.json({
+    message: "error unknown path"
+  });
+});
 
 const start = async () => {
   try {
