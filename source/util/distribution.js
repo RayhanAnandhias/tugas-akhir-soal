@@ -89,16 +89,15 @@ const graphColoring = (digraph) => {
 
   const result = {
     chromaticNumber: maxColor + 1,
+    distributionResult: colorIndex,
     graph: digraph.toStringNodes()
   };
 
   console.log(result);
+  console.log(colorIndex);
 
   return result;
 };
-
-// graphModelling(3, 4, 110, 110);
-// graphColoring(graphModelling(3, 3, 110, 110));
 
 module.exports = {
   graphModelling,
