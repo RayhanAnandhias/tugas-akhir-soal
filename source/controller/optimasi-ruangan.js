@@ -7,7 +7,8 @@ const optimasiRuangan = (req, res, next) => {
       vertikalRuangan,
       horizontalMeja,
       vertikalMeja,
-      jumlahPeserta
+      jumlahPeserta,
+      listSoal
     } = req.body;
 
     const result = hitungTotal(
@@ -20,7 +21,17 @@ const optimasiRuangan = (req, res, next) => {
 
     res.status(200).json({
       message: 'Berhasil melakukan optimasi ruangan',
-      data: result
+      data: {
+        ruangan: {
+          horizontalRuangan,
+          vertikalRuangan,
+          horizontalMeja,
+          vertikalMeja,
+          jumlahPeserta
+        },
+        OpsiLayoutKelas: result,
+        listSoal
+      }
     });
   } catch (error) {
     next(error);

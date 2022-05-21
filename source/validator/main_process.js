@@ -1,59 +1,89 @@
-const { body } = require("express-validator");
+const { body } = require('express-validator');
 
 const process = () => {
   return [
-    body("panjangBaris")
+    body('panjangBaris')
       .exists()
-      .withMessage("panjangBaris tidak boleh kosong")
+      .withMessage('panjangBaris tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai panjang baris harus bertipe number"),
-    body("panjangKolom")
+      .withMessage('nilai panjang baris harus bertipe number'),
+    body('panjangKolom')
       .exists()
-      .withMessage("panjangKolom tidak boleh kosong")
+      .withMessage('panjangKolom tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai panjang kolom harus bertipe number"),
-    body("jarakBaris")
+      .withMessage('nilai panjang kolom harus bertipe number'),
+    body('jarakBaris')
       .exists()
-      .withMessage("jarakBaris tidak boleh kosong")
+      .withMessage('jarakBaris tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai jarak baris harus bertipe number"),
-    body("jarakKolom")
+      .withMessage('nilai jarak baris harus bertipe number'),
+    body('jarakKolom')
       .exists()
-      .withMessage("jarakKolom tidak boleh kosong")
+      .withMessage('jarakKolom tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai jarak kolom harus bertipe number"),
+      .withMessage('nilai jarak kolom harus bertipe number'),
+    body('listSoal')
+      .exists()
+      .withMessage('listSoal tidak boleh kosong')
+      .isArray({ min: 1 })
+      .withMessage('list soal harus bertipe array dan minimal berisi 1 soal'),
+    body('horizontalRuangan')
+      .exists()
+      .withMessage('horizontalRuangan tidak boleh kosong')
+      .isNumeric()
+      .withMessage('nilai horizontal ruangan harus bertipe number'),
+    body('vertikalRuangan')
+      .exists()
+      .withMessage('vertikalRuangan tidak boleh kosong')
+      .isNumeric()
+      .withMessage('nilai vertikal ruangan harus bertipe number'),
+    body('horizontalMeja')
+      .exists()
+      .withMessage('horizontalMeja tidak boleh kosong')
+      .isNumeric()
+      .withMessage('nilai horizontal meja harus bertipe number'),
+    body('vertikalMeja')
+      .exists()
+      .withMessage('vertikalMeja tidak boleh kosong')
+      .isNumeric()
+      .withMessage('nilai vertikal meja harus bertipe number'),
+    body('jumlahPeserta')
+      .exists()
+      .withMessage('jumlahPeserta tidak boleh kosong')
+      .isNumeric()
+      .withMessage('nilai jumlah peserta harus bertipe number')
   ];
 };
 
 const processNTimes = () => {
   return [
-    body("panjangBaris")
+    body('panjangBaris')
       .exists()
-      .withMessage("panjangBaris tidak boleh kosong")
+      .withMessage('panjangBaris tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai panjang baris harus bertipe number"),
-    body("panjangKolom")
+      .withMessage('nilai panjang baris harus bertipe number'),
+    body('panjangKolom')
       .exists()
-      .withMessage("panjangKolom tidak boleh kosong")
+      .withMessage('panjangKolom tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai panjang kolom harus bertipe number"),
-    body("jarakBaris")
+      .withMessage('nilai panjang kolom harus bertipe number'),
+    body('jarakBaris')
       .exists()
-      .withMessage("jarakBaris tidak boleh kosong")
+      .withMessage('jarakBaris tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai jarak baris harus bertipe number"),
-    body("jarakKolom")
+      .withMessage('nilai jarak baris harus bertipe number'),
+    body('jarakKolom')
       .exists()
-      .withMessage("jarakKolom tidak boleh kosong")
+      .withMessage('jarakKolom tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai jarak kolom harus bertipe number"),
-    body("jumlahPercobaan")
+      .withMessage('nilai jarak kolom harus bertipe number'),
+    body('jumlahPercobaan')
       .exists()
-      .withMessage("jumlahPercobaan tidak boleh kosong")
+      .withMessage('jumlahPercobaan tidak boleh kosong')
       .notEmpty()
-      .withMessage("jumlahPercobaan tidak boleh kosong")
+      .withMessage('jumlahPercobaan tidak boleh kosong')
       .isNumeric()
-      .withMessage("nilai jumlahPercobaan harus bertipe number"),
+      .withMessage('nilai jumlahPercobaan harus bertipe number')
   ];
 };
 
