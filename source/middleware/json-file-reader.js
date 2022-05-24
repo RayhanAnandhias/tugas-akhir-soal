@@ -1,6 +1,7 @@
 const multer = require('multer');
 
 const fileFilter = (req, file, cb) => {
+  console.log(file);
   if (file.mimetype === 'application/json') {
     cb(null, true);
   } else {
