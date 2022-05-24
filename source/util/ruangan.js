@@ -52,7 +52,7 @@ const hitungTotal = (
       const total = jumlahHorizontal * jumlahVertical;
       const shouldPush =
         total > jumlahPeserta && total - jumlahPeserta < jumlahPeserta;
-      if (shouldPush)
+      if (shouldPush) {
         pasangan.push(
           producePasangan(
             vertical,
@@ -62,6 +62,7 @@ const hitungTotal = (
             total
           )
         );
+      }
     }
   }
   console.table(pasangan);

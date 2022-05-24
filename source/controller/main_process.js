@@ -1,5 +1,19 @@
 const { process, processNTimes } = require('../util/main_process');
 
+exports.testReadJson = (req, res, next) => {
+  try {
+    const dataFile = req.file;
+    const jsonObject = JSON.parse(req.file.buffer.toString());
+    console.log(dataFile);
+    res.status(200).json({
+      message: 'success',
+      data: { jsonObject, dataFile }
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 exports.process = (req, res, next) => {
   try {
     const {

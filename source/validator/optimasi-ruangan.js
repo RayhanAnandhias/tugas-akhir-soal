@@ -26,12 +26,7 @@ const optimasiRuanganValidator = () => {
       .exists()
       .withMessage('jumlahPeserta tidak boleh kosong')
       .isNumeric()
-      .withMessage('nilai jumlah peserta harus bertipe number'),
-    body('listSoal')
-      .exists()
-      .withMessage('listSoal tidak boleh kosong')
-      .isArray({ min: 1 })
-      .withMessage('list soal harus bertipe array dan minimal berisi 1 soal')
+      .withMessage('nilai jumlah peserta harus bertipe number')
   ];
 };
 

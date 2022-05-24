@@ -2,14 +2,13 @@ const { hitungTotal } = require('../util/ruangan');
 
 const optimasiRuangan = (req, res, next) => {
   try {
-    const {
-      horizontalRuangan,
-      vertikalRuangan,
-      horizontalMeja,
-      vertikalMeja,
-      jumlahPeserta,
-      listSoal
-    } = req.body;
+    const horizontalMeja = Number(req.body.horizontalMeja);
+    const vertikalMeja = Number(req.body.vertikalMeja);
+    const horizontalRuangan = Number(req.body.horizontalRuangan);
+    const vertikalRuangan = Number(req.body.vertikalRuangan);
+    const jumlahPeserta = Number(req.body.jumlahPeserta);
+
+    const listSoal = JSON.parse(req.file.buffer.toString());
 
     const result = hitungTotal(
       horizontalMeja,
@@ -23,10 +22,10 @@ const optimasiRuangan = (req, res, next) => {
       message: 'Berhasil melakukan optimasi ruangan',
       data: {
         ruangan: {
-          horizontalRuangan,
-          vertikalRuangan,
           horizontalMeja,
           vertikalMeja,
+          horizontalRuangan,
+          vertikalRuangan,
           jumlahPeserta
         },
         OpsiLayoutKelas: result,
