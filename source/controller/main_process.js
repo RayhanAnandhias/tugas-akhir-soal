@@ -7,7 +7,6 @@ exports.process = (req, res, next) => {
       panjangKolom,
       jarakBaris,
       jarakKolom,
-      listSoal,
       horizontalRuangan,
       vertikalRuangan,
       horizontalMeja,
@@ -15,12 +14,14 @@ exports.process = (req, res, next) => {
       jumlahPeserta
     } = req.body;
 
+    const listSoal = JSON.parse(req.file.buffer.toString());
+
     const result = process(
       {
-        panjangBaris,
-        panjangKolom,
-        jarakBaris,
-        jarakKolom
+        panjangBaris: Number(panjangBaris),
+        panjangKolom: Number(panjangKolom),
+        jarakBaris: Number(jarakBaris),
+        jarakKolom: Number(jarakKolom)
       },
       listSoal
     );
@@ -29,11 +30,11 @@ exports.process = (req, res, next) => {
       message: 'Berhasil melakukan simulasi Fisher Yates + Graph Coloring',
       data: {
         ruangan: {
-          horizontalRuangan,
-          vertikalRuangan,
-          horizontalMeja,
-          vertikalMeja,
-          jumlahPeserta
+          horizontalRuangan: Number(horizontalRuangan),
+          vertikalRuangan: Number(vertikalRuangan),
+          horizontalMeja: Number(horizontalMeja),
+          vertikalMeja: Number(vertikalMeja),
+          jumlahPeserta: Number(jumlahPeserta)
         },
         processResult: result
       }

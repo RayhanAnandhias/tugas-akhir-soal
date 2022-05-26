@@ -22,11 +22,6 @@ const process = () => {
       .withMessage('jarakKolom tidak boleh kosong')
       .isNumeric()
       .withMessage('nilai jarak kolom harus bertipe number'),
-    body('listSoal')
-      .exists()
-      .withMessage('listSoal tidak boleh kosong')
-      .isArray({ min: 1 })
-      .withMessage('list soal harus bertipe array dan minimal berisi 1 soal'),
     body('horizontalRuangan')
       .exists()
       .withMessage('horizontalRuangan tidak boleh kosong')
