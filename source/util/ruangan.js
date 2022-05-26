@@ -17,14 +17,16 @@ const producePasangan = (
   horizontal,
   jumlahHorizontal,
   jumlahVertical,
-  total
+  total,
+  ratio
 ) => {
   return {
     jb: vertical,
     jk: horizontal,
     horizontal: jumlahHorizontal,
     jumlahVertical: jumlahVertical,
-    total
+    total,
+    ratio
   };
 };
 
@@ -50,8 +52,8 @@ const hitungTotal = (
         vertical
       );
       const total = jumlahHorizontal * jumlahVertical;
-      const shouldPush =
-        total > jumlahPeserta && total - jumlahPeserta < jumlahPeserta;
+      const shouldPush = total > jumlahPeserta;
+      const ratio = total / jumlahPeserta;
       if (shouldPush) {
         pasangan.push(
           producePasangan(
@@ -59,7 +61,8 @@ const hitungTotal = (
             horizontal,
             jumlahHorizontal,
             jumlahVertical,
-            total
+            total,
+            ratio
           )
         );
       }
