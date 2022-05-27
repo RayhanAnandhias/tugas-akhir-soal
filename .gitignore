@@ -108,3 +108,5 @@ dist
 rest.http
 
 data-soal/
+
+public/*
