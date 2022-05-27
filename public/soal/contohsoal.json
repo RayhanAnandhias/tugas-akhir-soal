@@ -1,0 +1,217 @@
+[
+  {
+    "id": 1,
+    "question": "Economics deals primarily with the concept of",
+    "option": ["change.", "power.", "poverty.", "scarcity."],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "question": "Scarcity exists when",
+    "option": [
+      "the price of a good rises.",
+      "society can meet the wants of every individual.",
+      "there is less of a good or resource available than people wish to have.",
+      "there is less than an infinite amount of a resource or good."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "Economics is defined as the study of",
+    "option": [
+      "how society manages its scarce resources.",
+      "business.",
+      "central planning.",
+      "government regulation."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "question": "A good definition of equity would be",
+    "option": [
+      "efficiency.",
+      "eliminating extreme affluence.",
+      "fairness.",
+      "everyone receiving the same income."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 5,
+    "question": "When government policies are being designed,",
+    "option": [
+      "increasing efficiency usually results in more equity.",
+      "there is usually a tradeoff between equity and efficiency.",
+      "equity can usually be achieved without an efficiency loss.",
+      "equity and efficiency goals are usually independent of each other."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "question": "The opportunity cost of an item is",
+    "option": [
+      "what you give up to get that item.",
+      "always equal to the dollar value of the item.",
+      "always less than the dollar value of the item.",
+      "the number of hours needed to earn the money to buy it."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 7,
+    "question": "Ryan spends an hour studying instead of going for a bike ride. The opportunity cost to him of studying is",
+    "option": [
+      "the improvement in his grades from studying for the hour.",
+      "the enjoyment and exercise he would have received had he gone for a bike ride.",
+      "the difference between the improvement in his grades from studying minus the enjoyment of a bike ride.",
+      "zero. Since Ryan chose to study rather than to ride his bike, the value of studying must have been greater than the value of the bike ride."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 8,
+    "question": "A rational decision maker takes an action only if the",
+    "option": [
+      "marginal benefit is greater than the marginal cost.",
+      "average benefit is greater than the average cost.",
+      "marginal benefit is less than the marginal cost.",
+      "marginal benefit is greater than both the average cost and the marginal cost."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "A marginal change is a",
+    "option": [
+      "long-term trend.",
+      "change for the worse.",
+      "small incremental adjustment.",
+      "large, significant adjustment."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "question": "Economists understand that people respond to",
+    "option": [
+      "the wishes of policymakers.",
+      "tax breaks, but not tax hikes.",
+      "threats more than rewards.",
+      "incentives."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 11,
+    "question": "Which is the most accurate statement about trade?",
+    "option": [
+      "Trade can make every nation better off.",
+      "Trade makes some nations better off and others worse off.",
+      "Trade helps rich nations and hurts poor nations.",
+      "Trading for a good can make a nation better off only if the nation cannot produce that good."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 12,
+    "question": "If Canada is better than the United States at producing hockey sticks, but the United States is better than Canada at producing roller blades, the United States should",
+    "option": [
+      "put a quota on the amount of Canadian hockey sticks imported.",
+      "\tsubsidize its hockey stick industry so that it can compete with Canadian hockey sticks.",
+      "sell roller blades to Canada, and buy Canadian hockey sticks.",
+      "impose a tariff on Canadian hockey sticks in order to protect jobs in the U.S. roller blade industry."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 13,
+    "question": "In a market economy, economic activity is guided by",
+    "option": [
+      "the government.",
+      "corporations.",
+      "central planners.",
+      "prices."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 14,
+    "question": "One advantage market economies have over central planning is that market economies",
+    "option": [
+      "solve the problem of scarcity.",
+      "are more efficient.",
+      "establish government economic control.",
+      "provide an equal distribution of goods and services to consumers."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "The term market failure refers to",
+    "option": [
+      "an unsuccessful advertising campaign.",
+      "a situation in which the market on its own fails to allocate resources efficiently.",
+      "a situation in which competition among firms becomes ruthless.",
+      "a firm which is forced out of business because of losses."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 16,
+    "question": "An externality is the impact of",
+    "option": [
+      "a person’s actions on that person’s well-being.",
+      "society’s decisions on the well-being of society.",
+      "one person’s actions on the well-being of a bystander.",
+      "society’s decisions on the well-being of one person."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 17,
+    "question": "If a copper refinery does NOT bear the entire cost of the smoke it emits, it will",
+    "option": [
+      "\temit too much smoke.",
+      "\temit lower levels of smoke.",
+      "\temit an acceptable level of smoke.",
+      "\teliminate all smoke so as to avoid the entire cost of the smoke."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 18,
+    "question": "The two best reasons for a government to intervene in a market are to",
+    "option": [
+      "promote equity and to raise revenues.",
+      "promote equity and to promote efficiency.",
+      "promote efficiency and to raise revenues.",
+      "raise revenues and to promote stability."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 19,
+    "question": "Market power refers to the",
+    "option": [
+      "power of the government to regulate a market.",
+      "relative importance of a market to the overall economy.",
+      "power of a single person (or small group of people) to unduly influence market prices.",
+      "ability of a person or group of people to successfully market new products."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 20,
+    "question": "The income of a typical worker in a country is most closely linked to which of the following?",
+    "option": [
+      "population",
+      "government policies",
+      "labor unions",
+      "productivity"
+    ],
+    "answer": 3
+  }
+]

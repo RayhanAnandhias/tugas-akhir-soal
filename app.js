@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const router = require('./route/index');
+const router = require('./source/route/index');
+const path = require('path');
 
 const app = express();
 
@@ -15,6 +16,8 @@ const corsOptionDelegate = (req, callback) => {
 };
 
 app.use(cors(corsOptionDelegate));
+
+app.use('/soal', express.static(path.join(__dirname, 'public', 'soal')));
 
 app.use('/fisher-yates', router.fisherYates);
 app.use('/main-process', router.mainProcess);
@@ -40,8 +43,10 @@ app.use('*', (req, res) => {
 
 const start = async () => {
   try {
-    app.listen(3000, () => {
-      console.log('Listening to port 3000');
+    app.listen(process.env.TA_PORT, () => {
+      console.log(
+        `Listening to http://${process.env.TA_HOST}:${process.env.TA_PORT}`
+      );
     });
   } catch (e) {
     console.log(e);

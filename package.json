@@ -2,11 +2,16 @@
   "name": "tugas-akhir-soal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node source/index.js",
-    "dev": "nodemon source/index.js",
+    "start": "node -r dotenv/config app.js",
+    "dev": "nodemon -r dotenv/config app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/*"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,6 +26,7 @@
   "homepage": "https://github.com/RayhanAnandhias/tugas-akhir-soal#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "express-validator": "^6.14.0",
     "multer": "^1.4.4"

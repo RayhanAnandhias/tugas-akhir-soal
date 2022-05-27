@@ -9,9 +9,9 @@ const router = express.Router();
 router.post(
   '/process',
   jsonReader,
-  validator.process(),
+  validator.processMain(),
   validation,
-  controller.process
+  controller.processMain
 );
 
 router.post(

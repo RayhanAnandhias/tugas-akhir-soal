@@ -1,6 +1,6 @@
 const { body } = require('express-validator');
 
-const process = () => {
+const processMain = () => {
   return [
     body('panjangBaris')
       .exists()
@@ -83,6 +83,6 @@ const processNTimes = () => {
 };
 
 module.exports = {
-  process,
+  processMain,
   processNTimes
 };

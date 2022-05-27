@@ -1,6 +1,7 @@
-const { process, processNTimes } = require('../util/main_process');
+const { processMain, processNTimes } = require('../util/main_process');
+const FileSystem = require('fs');
 
-exports.process = (req, res, next) => {
+exports.processMain = (req, res, next) => {
   try {
     const {
       panjangBaris,
@@ -16,7 +17,7 @@ exports.process = (req, res, next) => {
 
     const listSoal = JSON.parse(req.file.buffer.toString());
 
-    const result = process(
+    const result = processMain(
       {
         panjangBaris: Number(panjangBaris),
         panjangKolom: Number(panjangKolom),
@@ -25,6 +26,21 @@ exports.process = (req, res, next) => {
       },
       listSoal
     );
+
+    const timestamp = +new Date();
+    const fileJsonName = `${timestamp}-HasilPengacakanSoal.json`;
+
+    FileSystem.writeFile(
+      `public/soal/${fileJsonName}`,
+      JSON.stringify(result.hasilAcakan.listPaket),
+      (err) => {
+        if (err) throw err;
+      }
+    );
+
+    const urlSoal = `http://${process.env.TA_HOST}:${process.env.TA_PORT}/soal/${fileJsonName}`;
+
+    console.log(urlSoal);
 
     res.status(200).json({
       message: 'Berhasil melakukan simulasi Fisher Yates + Graph Coloring',
@@ -36,7 +52,8 @@ exports.process = (req, res, next) => {
           vertikalMeja: Number(vertikalMeja),
           jumlahPeserta: Number(jumlahPeserta)
         },
-        processResult: result
+        processResult: result,
+        jsonUrl: urlSoal
       }
     });
   } catch (err) {

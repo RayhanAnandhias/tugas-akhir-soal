@@ -1,5 +1,5 @@
-const {acakSoal, acakSoalNTimes} = require("./acak_soal");
-const { graphColoring, graphModelling } = require("./distribution");
+const { acakSoal, acakSoalNTimes } = require('./acak_soal');
+const { graphColoring, graphModelling } = require('./distribution');
 
 /*
   dataRuangan = {
@@ -9,10 +9,10 @@ const { graphColoring, graphModelling } = require("./distribution");
       panjangKolom: number
   }  
 */
-const process = (dataRuangan, listSoal) => {
-  console.log("Data Ruangan");
+const processMain = (dataRuangan, listSoal) => {
+  console.log('Data Ruangan');
   console.log(dataRuangan);
-  console.log("===========")
+  console.log('===========');
   const graphColoringResult = graphColoring(
     graphModelling(
       dataRuangan.panjangBaris,
@@ -29,23 +29,27 @@ const process = (dataRuangan, listSoal) => {
 };
 
 const processNTimes = (dataRuangan, listSoal, jumlahPercobaan) => {
-    const graphColoringResult = graphColoring(
-      graphModelling(
-        dataRuangan.panjangBaris,
-        dataRuangan.panjangKolom,
-        dataRuangan.jarakBaris,
-        dataRuangan.jarakKolom
-      )
-    );
-    console.log("Berhasil membuat result " + graphColoringResult.chromaticNumber);
-    const hasilAcakan = acakSoalNTimes(listSoal, graphColoringResult.chromaticNumber, jumlahPercobaan);
-    return {
-      hasilGraph: graphColoringResult,
-      hasilAcakan,
-    };
+  const graphColoringResult = graphColoring(
+    graphModelling(
+      dataRuangan.panjangBaris,
+      dataRuangan.panjangKolom,
+      dataRuangan.jarakBaris,
+      dataRuangan.jarakKolom
+    )
+  );
+  console.log('Berhasil membuat result ' + graphColoringResult.chromaticNumber);
+  const hasilAcakan = acakSoalNTimes(
+    listSoal,
+    graphColoringResult.chromaticNumber,
+    jumlahPercobaan
+  );
+  return {
+    hasilGraph: graphColoringResult,
+    hasilAcakan
   };
+};
 
 module.exports = {
-    process,
-    processNTimes
-}
+  processMain,
+  processNTimes
+};
