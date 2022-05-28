@@ -68,24 +68,18 @@ const hitungTotal = (
       }
     }
   }
+
+  const minPasangan = pasangan.reduce((prev, cur) =>
+    prev.total < cur.total ? prev : cur
+  ).total;
+
+  const finalLayout = pasangan.filter((p) => p.total === minPasangan);
+
   console.table(pasangan);
-  return pasangan;
+
+  console.table(finalLayout);
+
+  return finalLayout;
 };
 
-// hitungTotal(60, 50, 500, 1000, 10);
-
 module.exports = { hitungTotal };
-
-/* 
-1. Nerima Input
-1.5 User memilih Layout Ingin digunakan (Bila ada beberapa pilihan)
-2. Munculin Graf , Soal teracak dalam bentuk file
- [] [] [] []
- [] [] [] []
-
-
- Merah = Paket Soal 1
-{
-
-}
-*/
