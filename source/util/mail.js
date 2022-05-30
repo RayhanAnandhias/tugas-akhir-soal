@@ -6,8 +6,8 @@ console.log(process.env.EMAIL + '-' + process.env.EMAIL_PW);
 
 const smtpConfig = {
   host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.EMAIL_PW
