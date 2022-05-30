@@ -22,6 +22,7 @@ app.use('/soal', express.static(path.join(__dirname, 'public', 'soal')));
 app.use('/fisher-yates', router.fisherYates);
 app.use('/main-process', router.mainProcess);
 app.use('/optimasi-ruangan', router.optimasiRuangan);
+app.use('/generate-template', router.soal);
 
 app.use((error, req, res, next) => {
   console.log('Ada Error ');

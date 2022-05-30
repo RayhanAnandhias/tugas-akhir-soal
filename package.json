@@ -26,10 +26,13 @@
   "homepage": "https://github.com/RayhanAnandhias/tugas-akhir-soal#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "docx": "^7.3.0",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "express-validator": "^6.14.0",
-    "multer": "^1.4.4"
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.5",
+    "nodemailer-express-handlebars": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
