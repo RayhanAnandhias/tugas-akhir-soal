@@ -1,4 +1,5 @@
 const { hitungTotal } = require('../util/ruangan');
+const path = require('path');
 
 const optimasiRuangan = (req, res, next) => {
   try {
@@ -8,7 +9,10 @@ const optimasiRuangan = (req, res, next) => {
     const vertikalRuangan = Number(req.body.vertikalRuangan);
     const jumlahPeserta = Number(req.body.jumlahPeserta);
 
-    const listSoal = JSON.parse(req.file.buffer.toString());
+    // const filePath = req.file.path.replace(/\\/gi, '/');
+
+    const listSoal = path.join(__dirname, '..', '..', req.file.path);
+    // const listSoal = docxToJson(filepath)
 
     const result = hitungTotal(
       horizontalMeja,

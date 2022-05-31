@@ -2,13 +2,13 @@ const express = require('express');
 const controller = require('../controller/optimasi-ruangan');
 const validator = require('../validator/optimasi-ruangan');
 const validation = require('../middleware/validation');
-const jsonReader = require('../middleware/json-file-reader');
+const docxUploader = require('../middleware/docx-uploader');
 
 const router = express.Router();
 
 router.post(
   '/',
-  jsonReader,
+  docxUploader,
   validator.optimasiRuanganValidator(),
   validation,
   controller.optimasiRuangan

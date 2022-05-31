@@ -2,13 +2,13 @@ const express = require('express');
 const controller = require('../controller/main_process');
 const validator = require('../validator/main_process');
 const validation = require('../middleware/validation');
-const jsonReader = require('../middleware/json-file-reader');
+const docxUploader = require('../middleware/docx-uploader');
 
 const router = express.Router();
 
 router.post(
   '/process',
-  jsonReader,
+  docxUploader,
   validator.processMain(),
   validation,
   controller.processMain
