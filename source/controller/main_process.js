@@ -19,8 +19,7 @@ exports.processMain = async (req, res, next) => {
       vertikalRuangan,
       horizontalMeja,
       vertikalMeja,
-      jumlahPeserta,
-      email
+      jumlahPeserta
     } = req.body;
 
     const filePathSoal = req.file.path;
@@ -40,8 +39,7 @@ exports.processMain = async (req, res, next) => {
     );
 
     const hasilToDocx = await generateRandomizeResult(
-      result.hasilAcakan.listPaket,
-      email
+      result.hasilAcakan.listPaket
     );
 
     //zip hasil docx acakan
@@ -51,7 +49,7 @@ exports.processMain = async (req, res, next) => {
       zip.addLocalFile(path.join(__dirname, `../../public/soal/${fileName}`));
     }
 
-    const fileZipName = `${+new Date()}-hasil-acak-soal-${email}.zip`;
+    const fileZipName = `${+new Date()}-hasil-acak-soal.zip`;
 
     const zipPath = `public/soal/${fileZipName}`;
 

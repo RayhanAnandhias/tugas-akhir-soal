@@ -51,7 +51,7 @@ const docxToJson = async (filePath) => {
   return result;
 };
 
-const generateRandomizeResult = async (soalCollection, email) => {
+const generateRandomizeResult = async (soalCollection) => {
   try {
     const listNameFile = [];
     // ini iterasi untuk kumpulan soal nya (1 array 1 docx)
@@ -91,7 +91,7 @@ const generateRandomizeResult = async (soalCollection, email) => {
 
       let buffer = await Packer.toBuffer(doc);
 
-      let docName = `${+new Date()}-hasil-acak-paket${l + 1}(${email}).docx`;
+      let docName = `${+new Date()}-hasil-acak-paket${l + 1}.docx`;
 
       listNameFile.push(docName);
 
