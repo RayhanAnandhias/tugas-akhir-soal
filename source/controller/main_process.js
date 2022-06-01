@@ -20,9 +20,10 @@ exports.processMain = async (req, res, next) => {
       horizontalMeja,
       vertikalMeja,
       jumlahPeserta,
-      filePathSoal,
       email
     } = req.body;
+
+    const filePathSoal = req.file.path;
 
     const listSoal = await docxToJson(
       path.join(__dirname, '..', '..', filePathSoal)

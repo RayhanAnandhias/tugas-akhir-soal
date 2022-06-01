@@ -1,6 +1,4 @@
 const { hitungTotal } = require('../util/ruangan');
-const path = require('path');
-const fs = require('fs');
 
 const optimasiRuangan = async (req, res, next) => {
   try {
@@ -9,9 +7,6 @@ const optimasiRuangan = async (req, res, next) => {
     const horizontalRuangan = Number(req.body.horizontalRuangan);
     const vertikalRuangan = Number(req.body.vertikalRuangan);
     const jumlahPeserta = Number(req.body.jumlahPeserta);
-    const email = req.body.email;
-
-    const filePathSoal = req.file.path;
 
     const result = hitungTotal(
       horizontalMeja,
@@ -31,9 +26,7 @@ const optimasiRuangan = async (req, res, next) => {
           vertikalRuangan,
           jumlahPeserta
         },
-        email,
-        OpsiLayoutKelas: result,
-        filePathSoal
+        OpsiLayoutKelas: result
       }
     });
   } catch (error) {
