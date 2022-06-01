@@ -53,6 +53,8 @@ exports.processMain = async (req, res, next) => {
 
     const fileZipName = `${+new Date()}-hasil-acak-soal-${email}.zip`;
 
+    const zipPath = `public/soal/${fileZipName}`;
+
     const zipFilePath = path.join(
       __dirname,
       `../../public/soal/${fileZipName}`
@@ -70,9 +72,6 @@ exports.processMain = async (req, res, next) => {
       );
     }
 
-    //send email attachment
-    await mailer.sendFileHasilAcakan(fileZipName, zipFilePath, email);
-
     const urlSoal = `http://${process.env.TA_HOST}:${process.env.TA_PORT}/soal/${fileZipName}`;
 
     res.status(200).json({
@@ -86,7 +85,8 @@ exports.processMain = async (req, res, next) => {
           jumlahPeserta: Number(jumlahPeserta)
         },
         processResult: result,
-        zipUrl: urlSoal
+        zipUrl: urlSoal,
+        zipFilePath: zipPath
       }
     });
   } catch (err) {
@@ -123,5 +123,32 @@ exports.processNTimes = (req, res, next) => {
     });
   } catch (err) {
     next(err);
+  }
+};
+
+exports.sendResult = async (req, res, next) => {
+  try {
+    const { zipFilePath, email } = req.body;
+    const dashboardPdf = req.file.path;
+
+    const zipPath = path.join(__dirname, `../../${zipFilePath}`);
+    const dashboardPdfPath = path.join(__dirname, '..', '..', dashboardPdf);
+
+    const zipFileName = path.basename(zipPath);
+    const dashboardPdfPathName = path.basename(dashboardPdfPath);
+
+    // send email
+    const resultEmail = await mailer.sendFiles(
+      { fileName: zipFileName, filePath: zipPath },
+      { fileName: dashboardPdfPathName, filePath: dashboardPdfPath },
+      email
+    );
+
+    res.status(200).json({
+      message: `Berhasil mengirim hasil ke email ${email}`,
+      data: resultEmail
+    });
+  } catch (error) {
+    next(error);
   }
 };

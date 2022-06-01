@@ -88,7 +88,25 @@ const processNTimes = () => {
   ];
 };
 
+const sendResult = () => {
+  return [
+    body('zipFilePath')
+      .trim()
+      .exists()
+      .withMessage('zipFilePath tidak boleh kosong')
+      .notEmpty()
+      .withMessage('zipFilePath tidak boleh kosong'),
+    body('email')
+      .trim()
+      .exists()
+      .withMessage('email tidak boleh kosong')
+      .isEmail()
+      .withMessage('Email harus valid')
+  ];
+};
+
 module.exports = {
   processMain,
-  processNTimes
+  processNTimes,
+  sendResult
 };

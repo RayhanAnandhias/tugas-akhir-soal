@@ -49,6 +49,23 @@ exports.sendFileHasilAcakan = async (fileName, filePath, recipient) => {
   });
 };
 
+exports.sendFiles = async (fileZip, filePdf, recipient) => {
+  const address = {
+    name: 'Admin Yuk Acak',
+    address: process.env.EMAIL
+  };
+  return transporter.sendMail({
+    from: address,
+    to: recipient,
+    subject: 'Hasil Acakan Soal',
+    template: 'sendAttachmentFileResult',
+    attachments: [
+      { path: fileZip.filePath, filename: fileZip.fileName },
+      { path: filePdf.filePath, filename: filePdf.fileName }
+    ]
+  });
+};
+
 const handlebarOptions = {
   viewEngine: {
     extName: '.handlebars',
