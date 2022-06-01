@@ -26,7 +26,13 @@ const optimasiRuanganValidator = () => {
       .exists()
       .withMessage('jumlahPeserta tidak boleh kosong')
       .isNumeric()
-      .withMessage('nilai jumlah peserta harus bertipe number')
+      .withMessage('nilai jumlah peserta harus bertipe number'),
+    body('email')
+      .trim()
+      .exists()
+      .withMessage('email tidak boleh kosong')
+      .isEmail()
+      .withMessage('Email harus valid')
   ];
 };
 

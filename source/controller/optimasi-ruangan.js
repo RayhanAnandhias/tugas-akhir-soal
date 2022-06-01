@@ -1,18 +1,17 @@
 const { hitungTotal } = require('../util/ruangan');
 const path = require('path');
+const fs = require('fs');
 
-const optimasiRuangan = (req, res, next) => {
+const optimasiRuangan = async (req, res, next) => {
   try {
     const horizontalMeja = Number(req.body.horizontalMeja);
     const vertikalMeja = Number(req.body.vertikalMeja);
     const horizontalRuangan = Number(req.body.horizontalRuangan);
     const vertikalRuangan = Number(req.body.vertikalRuangan);
     const jumlahPeserta = Number(req.body.jumlahPeserta);
+    const email = req.body.email;
 
-    // const filePath = req.file.path.replace(/\\/gi, '/');
-
-    const listSoal = path.join(__dirname, '..', '..', req.file.path);
-    // const listSoal = docxToJson(filepath)
+    const filePathSoal = req.file.path;
 
     const result = hitungTotal(
       horizontalMeja,
@@ -32,8 +31,9 @@ const optimasiRuangan = (req, res, next) => {
           vertikalRuangan,
           jumlahPeserta
         },
+        email,
         OpsiLayoutKelas: result,
-        listSoal
+        filePathSoal
       }
     });
   } catch (error) {

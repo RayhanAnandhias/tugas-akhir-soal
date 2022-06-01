@@ -9,6 +9,7 @@ const {
 } = require('docx');
 const fs = require('fs');
 const mailer = require('../util/mail');
+const path = require('path');
 
 const columnWidth = [612, 2091, 6111];
 
@@ -56,19 +57,20 @@ exports.generateTemplate = async (req, res, next) => {
 
     const timestamp = +new Date();
     const fileName = `${timestamp}-TemplateSoal-${email}.docx`;
+    const filePath = path.join(__dirname, `../../public/soal/${fileName}`);
 
-    fs.writeFile(`public/soal/${fileName}`, buffer, (err) => {
+    fs.writeFile(filePath, buffer, (err) => {
       if (err) throw err;
     });
 
     //send email attachment
     const sentMessageInfo = await mailer.sendUrlTemplateSoal(
       fileName,
-      buffer,
+      filePath,
       email
     );
 
-    fs.unlink(`public/soal/${fileName}`, (err) => {
+    fs.unlink(filePath, (err) => {
       if (err) throw err;
       console.log(`${fileName} was deleted`);
     });

@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/RayhanAnandhias/tugas-akhir-soal#readme",
   "dependencies": {
+    "adm-zip": "^0.5.9",
     "cors": "^2.8.5",
     "docx": "^7.3.0",
     "dotenv": "^16.0.1",

@@ -21,7 +21,7 @@ transporter.verify((err, success) => {
   console.log('nodemailer config is correct');
 });
 
-exports.sendUrlTemplateSoal = async (fileName, buffer, recipient) => {
+exports.sendUrlTemplateSoal = async (fileName, filePath, recipient) => {
   const address = {
     name: 'Admin Yuk Acak',
     address: process.env.EMAIL
@@ -31,7 +31,21 @@ exports.sendUrlTemplateSoal = async (fileName, buffer, recipient) => {
     to: recipient,
     subject: 'File Template Soal',
     template: 'sendAttachmentFile',
-    attachments: [{ filename: fileName, content: buffer }]
+    attachments: [{ filename: fileName, path: filePath }]
+  });
+};
+
+exports.sendFileHasilAcakan = async (fileName, filePath, recipient) => {
+  const address = {
+    name: 'Admin Yuk Acak',
+    address: process.env.EMAIL
+  };
+  return transporter.sendMail({
+    from: address,
+    to: recipient,
+    subject: 'Hasil Acakan Soal',
+    template: 'sendAttachmentFile',
+    attachments: [{ path: filePath, filename: fileName }]
   });
 };
 

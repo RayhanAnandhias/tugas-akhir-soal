@@ -17,7 +17,8 @@ const storage = multer.diskStorage({
     cb(null, 'public/soal');
   },
   filename: function (req, file, cb) {
-    cb(null, `${+new Date()}-FileSoal.docx`);
+    const name = req.body.email || 'anonym';
+    cb(null, `${+new Date()}-FileSoal-${name}.docx`);
   }
 });
 
