@@ -45,6 +45,11 @@ const docxToJson = async (filePath) => {
 
   fs.unlink(`${filePath}.html`, (err) => {
     if (err) throw err;
+    console.log(`${filePath}.html was deleted`);
+  });
+
+  fs.unlink(`${filePath}`, (err) => {
+    if (err) throw err;
     console.log(`${filePath} was deleted`);
   });
 
