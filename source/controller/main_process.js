@@ -142,6 +142,16 @@ exports.sendResult = async (req, res, next) => {
       email
     );
 
+    fs.unlink(zipPath, (err) => {
+      if (err) throw err;
+      console.log(`success delete file zip hasil acakan`);
+    });
+
+    fs.unlink(dashboardPdfPath, (err) => {
+      if (err) throw err;
+      console.log(`success delete file pdf dashboard`);
+    });
+
     res.status(200).json({
       message: `Berhasil mengirim hasil ke email ${email}`,
       data: resultEmail
