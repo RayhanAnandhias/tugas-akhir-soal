@@ -69,6 +69,8 @@ const hitungTotal = (
     }
   }
 
+  if (pasangan.length === 0) return pasangan;
+
   const minPasangan = pasangan.reduce((prev, cur) =>
     prev.total < cur.total ? prev : cur
   ).total;
