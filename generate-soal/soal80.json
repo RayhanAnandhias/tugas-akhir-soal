@@ -1,0 +1,956 @@
+[
+  {
+    "id": 1,
+    "question": "There is a tremendous gap between youth and the elderly in all of the following EXCEPT",
+    "option": [
+      "political knowledge.",
+      "political participation.",
+      "political interest.",
+      "volunteering.",
+      "media use."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "question": "Political knowledge",
+    "option": [
+      "is greater among youth than the elderly.",
+      "fosters political tolerance.",
+      "is not that important in a democracy.",
+      "is generally high in the United States.",
+      "none of the above"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 3,
+    "question": "Voter turnout matters because",
+    "option": [
+      "federal funds are allocated on the basis of the number of voters in a congressional district.",
+      "better candidates are selected when more people vote.",
+      "politicians pay more attention to those who vote than to those who do not vote.",
+      "it makes citizens feel better.",
+      "it makes our country look better."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "question": "Government is defined as the",
+    "option": [
+      "organization that brings problems to the attention of public officials.",
+      "body that is concerned with economic problems while leaving social problems to other institutions of society.",
+      "agency that implements policies that have been enacted by other institutions of the political system.",
+      "executive branch and its agencies.",
+      "institutions and processes through which public policies are made for society."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 5,
+    "question": "The policymaking institutions of the American national government include all of thefollowing EXCEPT",
+    "option": [
+      "the Supreme Court.",
+      "the presidency.",
+      "political parties.",
+      "Congress.",
+      "the Senate."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 6,
+    "question": "One advantage of the Internet for democracy is that it",
+    "option": [
+      "provides less information than newspapers.",
+      "makes it easy to avoid political topics.",
+      "makes it easier for citizens to communicate directly with government.",
+      "will provide more political information to political elites.",
+      "none of the above"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 7,
+    "question": "Things that are indivisible, nonexclusive, and that everyone can share are called",
+    "option": [
+      "intangible property.",
+      "socialized.",
+      "community property.",
+      "communist.",
+      "public goods."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 8,
+    "question": "Governments in the modern world, whether democratic or not, are similar in doing all of thefollowing EXCEPT",
+    "option": [
+      "protecting citizens ¹ civil liberties.",
+      "maintaining a national defense.",
+      "providing public goods.",
+      "collecting taxes.",
+      "providing public services."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "A public good is defined as",
+    "option": [
+      "something in which any member of society can share.",
+      "something provided by the government that cannot be provided by the private sector.",
+      "a choice that government makes in response to a political issue.",
+      "a public policy that is good for the nation as a whole.",
+      "all of the above"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "question": "Which of the following statements about public goods is FALSE?",
+    "option": [
+      "The government usually provides public goods.",
+      "Public goods are things that everyone can share.",
+      "Individuals have powerful incentives to provide public goods.",
+      "Public goods are not profitable.",
+      "Public goods are indivisible and nonexclusive."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "question": "All governments",
+    "option": [
+      "provide public goods and socialize citizens into the political and social system.",
+      "ensure safety on the high seas and promote free enterprise.",
+      "maintain national parks and a national defense.",
+      "guarantee a capitalist economy and collect taxes.",
+      "hold elections."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 12,
+    "question": "All governments",
+    "option": [
+      "have written constitutions.",
+      "are elected.",
+      "have a legislature.",
+      "provide services.",
+      "have a president."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 13,
+    "question": "Which of the following statements about taxes is TRUE?",
+    "option": [
+      "One out of every three dollars earned by an American citizen is used to pay taxes.",
+      "Despite the image presented by the media, survey data reveal that Americans feel they are getting their money's worth for the taxes they pay.",
+      "About one-tenth of the average American citizen's salary goes to taxes.",
+      "The tax burden in the United States is higher than in most other democratic nations.",
+      "All of these are true."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "An interest group so single-minded that its members often vote on only one issue, ignoring apolitician's stand on everything else, is known as",
+    "option": [
+      "a one-issue group.",
+      "a uni-issue group.",
+      "a hot-button group.",
+      "a single-issue group.",
+      "a mono-issue group."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 15,
+    "question": "When compared with the rest of the world, America has a relatively low",
+    "option": [
+      "number of offices up for election.",
+      "number of candidates who seek office.",
+      "frequency of elections.",
+      "voter turnout in elections.",
+      "all of the above"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 16,
+    "question": "Many politicians believe that single-issue groups",
+    "option": [
+      "stimulate the political system to solve public policy problems.",
+      "are essential to democracy.",
+      "complicate efforts to seek the middle ground on various issues.",
+      "play a unifying role in American politics.",
+      "do not affect policymaking."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 17,
+    "question": "Politics is defined by Harold Lasswell as",
+    "option": [
+      "conflict in society.",
+      "the exercise of power.",
+      "the resolution of conflict in a way that serves the public.",
+      "who gets what, when, and how.",
+      "a course of action to solve a problem."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 18,
+    "question": "Single-issue groups",
+    "option": [
+      "are rapidly losing prominence in American politics.",
+      "usually run their own candidates for public office.",
+      "have little sympathy for compromising.",
+      "help facilitate the construction of a cohesive national public policy.",
+      "are highly regarded by political scientists for their contributions to democracy."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 19,
+    "question": "Which of the following statements best describes voter turnout in the United States?",
+    "option": [
+      "Among democratic nations, the United States leads the world in voter turnout.",
+      "Voter turnout in the United States is constitutionally mandated.",
+      "Voters are usually a microcosm of the entire body of American citizens.",
+      "Most American voters consider politics as critical to their interests.",
+      "The United States has one of the lowest voter turnout rates in the world."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 20,
+    "question": "The list of problems to which political leaders are paying serious attention is a(n)",
+    "option": [
+      "problem set.",
+      "policy agenda.",
+      "issue constellation.",
+      "legislative package.",
+      "none of the above"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "question": "________ is the process by which policy comes into being and evolves over time.",
+    "option": [
+      "Democracy",
+      "A policymaking system",
+      "A constellation",
+      "The bureaucracy",
+      "Government"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 22,
+    "question": "The process from above is",
+    "option": [
+      "a policymaking system.",
+      "political decision making.",
+      "a policy agenda.",
+      "a government.",
+      "a linkage institution."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 23,
+    "question": "An example of public policymaking would be",
+    "option": [
+      "Congress and the president deciding not to act on the AIDS crisis.",
+      "a majority of the public supporting the idea of government dealing with unemployment.",
+      "the president meeting with the heads of oil companies.",
+      "the press creating public concern about racial discrimination.",
+      "all of the above"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 24,
+    "question": "All of the following are parts of the policymaking system EXCEPT",
+    "option": [
+      "public goods.",
+      "policymaking institutions.",
+      "linkage institutions.",
+      "people's political interests.",
+      "policy."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 25,
+    "question": "Which of the following statements about a government's policy agenda is FALSE?",
+    "option": [
+      "When you vote, you are partly looking at whether a candidate shares your agenda or not.",
+      "Bad news gets an issue on the policy agenda more quickly than good news.",
+      "When people confront government officials with problems to be solved, they are trying to influence the government's policy agenda.",
+      "A government's policy agenda tends to remain constant over time.",
+      "None of the above; all are true."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 26,
+    "question": "A political party is a key ________ in America¹s democratic system.",
+    "option": [
+      "stimulus-response",
+      "linkage institution",
+      "input",
+      "majoritarian inhibitor",
+      "output"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "question": "In a democratic society, parties, elections, interest groups and the media are all examples of ________ between the preferences of citizens and the government's policy agenda.",
+    "option": [
+      "cross-pollination",
+      "inputs and outputs",
+      "ideological bridges",
+      "obstacles",
+      "linkage institutions"
+    ],
+    "answer": 4
+  },
+  {
+    "id": 28,
+    "question": "Which of the following is NOT a linkage institution?",
+    "option": [
+      "political parties",
+      "the media",
+      "interest groups",
+      "Congress",
+      "All of these are linkage institutions."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 29,
+    "question": "Which of these is a linkage institution?",
+    "option": [
+      "USA Today",
+      "the president's cabinet",
+      "the House of Representatives",
+      "the ambassador to France",
+      "all of the above"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 30,
+    "question": "Parties and interest groups",
+    "option": [
+      "determine which issues are on the policy agenda.",
+      "are not particularly interested in the policy agenda.",
+      "work hard to get the issues they want on the policy agenda.",
+      "have no effect on the policy agenda.",
+      "determine the congressional agenda."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 31,
+    "question": "A choice that government makes in response to some issue on its agenda is called",
+    "option": [
+      "public policy.",
+      "selective selection.",
+      "a law.",
+      "stimulus-response.",
+      "rational choice theory."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 32,
+    "question": "________ arise when people disagree about a problem or a public policy choice made tocombat a problem.",
+    "option": [
+      "Revolutions",
+      "Political issues",
+      "Social crises",
+      "Governments",
+      "Wars"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 33,
+    "question": "A key question that confronts government regarding different public policy choices is",
+    "option": [
+      "whether an appropriate linkage institution is willing to frame a policy.",
+      "which is the most complicated one to deal with.",
+      "which is the least complicated one to deal with.",
+      "whether or not government should do anything about them.",
+      "all of the above"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 34,
+    "question": "Public policy is defined as a",
+    "option": [
+      "policy directed at more than one person.",
+      "course of action to solve a problem.",
+      "set of rules and regulations issued by a government agency.",
+      "course of action by a political party.",
+      "choice that government makes in response to an issue."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 35,
+    "question": "Political issues",
+    "option": [
+      "are always acted upon by the government.",
+      "arise when people disagree about a problem or public policy choices made to combat a problem.",
+      "are limited in number in the United States.",
+      "usually emerge out of group consensus on a problem.",
+      "all of the above"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 36,
+    "question": "Karl Marx and Friedrich Engels published",
+    "option": [
+      "The Communist Manifesto.",
+      "A Theory of Democracy.",
+      "The Federalist Papers.",
+      "Poor Richard's Almanac.",
+      "War and Peace."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 37,
+    "question": "One type of linkage institution is",
+    "option": [
+      "an interest group.",
+      "a government.",
+      "a bureaucracy.",
+      "a legislature.",
+      "all of the above"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 38,
+    "question": "The effects a policy has on people and problems is called",
+    "option": [
+      "policy outputs.",
+      "policy implementation.",
+      "policy issues.",
+      "policy impacts.",
+      "policy agenda."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 39,
+    "question": "The writers of the United States Constitution",
+    "option": [
+      "were distrustful of democracy.",
+      "sought to establish the most democratic system they could.",
+      "were interested in promoting equality above all else.",
+      "patterned our government after Britain's except for the King.",
+      "believed in majority rule."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 40,
+    "question": "A means of selecting policymakers and or organizing government so that policy representsand responds to the public's preferences is",
+    "option": [
+      "government.",
+      "politics.",
+      "public administration.",
+      "democracy.",
+      "all of the above"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 41,
+    "question": "Which of these is NOT a criterion of traditional democratic theory, as formulated by RobertDahl?",
+    "option": [
+      "freedom of speech and press",
+      "One person gets one vote.",
+      "Citizenship must be open to all within a nation.",
+      "Those who participate in political organizations must be representative of the general population.",
+      "Citizens must make rational choices."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 42,
+    "question": "Which of the following is NOT one of the cornerstones of an ideal democracy?",
+    "option": [
+      "a constitution",
+      "effective participation",
+      "citizen control of the agenda",
+      "economic equality",
+      "equality in voting"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 43,
+    "question": "Two of the most important principles of democratic theory are majority rule and",
+    "option": [
+      "the plurality rule.",
+      "judicial review.",
+      "minority rights.",
+      "majority restraint.",
+      "Roberts ¹ Rules of Order."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 44,
+    "question": "Which of the following takes the most positive view of democracy in the United States?",
+    "option": [
+      "democratic centralism",
+      "pluralist theory",
+      "hyperpluralism",
+      "democratic positivism",
+      "elite theory"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 45,
+    "question": "All of the following are ingredients of a pluralistic democracy EXCEPT",
+    "option": [
+      "group competition for policy benefits.",
+      "bargaining and compromise.",
+      "majority rule.",
+      "multiple access points to policymakers.",
+      "separation of powers."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 46,
+    "question": "The most fundamental element of democratic theory is",
+    "option": [
+      "  power to the people!",
+      "government efficiency.",
+      "equality.",
+      "majority rule.",
+      "access to information."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 47,
+    "question": "Representation refers to",
+    "option": [
+      "majority rule.",
+      "all policy views being included in political debate.",
+      "the protection of minority rights in a pluralist system.",
+      "electing office-holders in fair and free elections.",
+      "the correspondence between the few leaders and the many followers in a democracy."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 48,
+    "question": "Which of the following individuals have suggested that pluralist theory is less descriptive ofAmerican politics than in the past?",
+    "option": [
+      "Anthony King",
+      "Robert Dahl",
+      "Alexis de Tocqueville",
+      "Robert Putnam",
+      "Thomas Jefferson"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 49,
+    "question": "American government is viewed most positively by the",
+    "option": [
+      "socialist theory.",
+      "pluralist theory.",
+      "positivist philosophy.",
+      "hyperpluralist theory.",
+      "elite and class theory."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 50,
+    "question": "A system in which many groups make themselves heard and felt somewhere in the policyprocess is",
+    "option": [
+      "pluralistic.",
+      "direct democracy.",
+      "hyperpluralistic.",
+      "elitist.",
+      "bureaucratic."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 51,
+    "question": "The theory that argues that group competition results in a rough approximation of the publicinterest in public policy is",
+    "option": [
+      "hyperpluralist theory.",
+      "balance of power theory.",
+      "elite and class theory.",
+      "pluralist theory.",
+      "bureaucratic theory."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 52,
+    "question": "Which of the following is NOT a contemporary theory of democracy?",
+    "option": [
+      "hyperpluralism",
+      "class theory",
+      "democratic centralism",
+      "pluralism",
+      "elite theory"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 53,
+    "question": "Robert Putnam's claim that Americans are now   bowling alone   is a criticism of",
+    "option": [
+      "pluralism.",
+      "elite theory.",
+      "hyperpluralism.",
+      "social network theory.",
+      "none of the above"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 54,
+    "question": "Which of the following is most fundamentally critical of American democracy?",
+    "option": [
+      "traditional democratic theory",
+      "democratic negativism",
+      "pluralist theory",
+      "critical democratic theory",
+      "elite and class theory"
+    ],
+    "answer": 4
+  },
+  {
+    "id": 55,
+    "question": "Many elite and class theorists believe that ________ of Americans control most governmentpolicy decisions.",
+    "option": [
+      "5 percent",
+      "a majority",
+      "the vast middle class",
+      "1 percent",
+      "10 percent"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 56,
+    "question": "Over a third of America's wealth is owned by",
+    "option": [
+      "the United States government.",
+      "one percent of the population.",
+      "a third of the population.",
+      "seven percent of the population.",
+      "Japanese investors."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 57,
+    "question": "At the center of all theories of elite domination of politics is",
+    "option": [
+      "big business.",
+      "the Congress.",
+      "the nouveau riche.",
+      "the Trilateral Commission.",
+      "the president."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 58,
+    "question": "Elite and class theory holds that",
+    "option": [
+      "all societies are divided along class lines and that an upper-class elite will rule.",
+      "power is dispersed among many institutions.",
+      "in a democracy the majority class must overthrow the government and rule by itself if government is to be freed from the control of the rich.",
+      "there is little consensus in policymaking among elites.",
+      "politics is the basis of elite power."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 59,
+    "question": "The theory that sees wealth as the basis of power is the",
+    "option": [
+      "democratic theory.",
+      "hyperpluralist theory.",
+      "Jeffersonian theory.",
+      "elite and class theory.",
+      "pluralist theory."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 60,
+    "question": "Hyperpluralists believe that the dominant player in American politics is",
+    "option": [
+      "groups.",
+      "the president.",
+      "the government.",
+      "the media.",
+      "rich individuals."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 61,
+    "question": "In evaluating American democracy, hyperpluralists",
+    "option": [
+      "claim that competing groups vying for power make for generally efficient, honest government.",
+      "claim that society is governed solely by an upper-class elite.",
+      "claim that too many influential groups cripple government's ability to govern.",
+      "believe that the public interest is nearly always translated into public policy in the United States.",
+      "none of the above"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 62,
+    "question": "According to hyperpluralists, the increasing caseloads of federal and state courts demonstrate",
+    "option": [
+      "the high status of attorneys in the United States.",
+      "the inability to control the bureaucracy in implementing policy.",
+      "that groups are more likely to appeal to different institutions in order to gain policy benefits.",
+      "the expanding scope of government in the United States.",
+      "the increasing complexity of our social networks."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 63,
+    "question": "The   power of the few   in the United States today is likely to refer to",
+    "option": [
+      "high-level bureaucrats.",
+      "elected officials.",
+      "property holders.",
+      "technical experts.",
+      "a silent majority."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 64,
+    "question": "The nature of groups and the government in hyperpluralist theory is",
+    "option": [
+      "strong government and strong groups.",
+      "weak groups and strong government.",
+      "weak groups, strong elites, and weak government.",
+      "strong groups and weak government.",
+      "too few groups result in the creation of many governments."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 65,
+    "question": "Hyperpluralists would argue that",
+    "option": [
+      "too many influential groups cripple government's ability to govern.",
+      "society is divided along class lines.",
+      "group competition will result in a rough approximation of the public interest.",
+      "wealth is the basis of power.",
+      "too few groups lead to a proliferation of governments."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 66,
+    "question": "Which of these is NOT considered a challenge to democracy by the textbook?",
+    "option": [
+      "the diversity of the American people",
+      "the level of political participation by Americans",
+      "PACs",
+      "the specialization of knowledge held by experts",
+      "the tendency of the American political system to change rapidly"
+    ],
+    "answer": 4
+  },
+  {
+    "id": 67,
+    "question": "Which of the following would NOT be considered a contemporary challenge to Americandemocracy?",
+    "option": [
+      "complexity of the issues",
+      "the threat of communism",
+      "the use of money in politics",
+      "political participation rates",
+      "diversity"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 68,
+    "question": "Increased technical expertise is a challenge to democracy because",
+    "option": [
+      "it is difficult to have an informed   non-technical   public debate on technical issues.",
+      "it goes against the tenets of pluralist political theory.",
+      "it violates the notion of one man, one vote.",
+      "elected officials find it hard to understand technical experts.",
+      "interest groups have a difficult time securing technical expertise."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 69,
+    "question": "PAC stands for",
+    "option": [
+      "Partisan Assistance Contribution.",
+      "Party Affairs Council.",
+      "Policy Advisory Commission.",
+      "Politically Active Constituency.",
+      "Political Action Committee."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 70,
+    "question": "People who worry about PACs are most especially concerned about",
+    "option": [
+      "the decline in American voter turnout.",
+      "the close connection between money and politics.",
+      "too much democracy being dangerous to social stability.",
+      "the role Party Affairs Councils play in elections.",
+      "single-issue voters."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 71,
+    "question": "Escalating campaign costs are a challenge to democracy because",
+    "option": [
+      "it is believed that PAC contributions affect the way members of Congress vote on single issues.",
+      "they are associated with more technical policies.",
+      "they lead to policy gridlock.",
+      "they reflect diverse interests.",
+      "they make it easier for candidates to raise money."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 72,
+    "question": "According to the text, the diversity of political interests in America is resulting in",
+    "option": [
+      "a decrease in political participation.",
+      "policy gridlock.",
+      "the breakdown of the educational system.",
+      "an increase in political participation.",
+      "a cultural renaissance."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 73,
+    "question": "The ability of groups to prevent the government from taking actions adverse to their interestsleads to what the text calls",
+    "option": [
+      "Dahl's   ideal democratic process.",
+      "elite dominance.",
+      "budget deficits.",
+      "enlightened understanding.",
+      "policy gridlock."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 74,
+    "question": "The overall set of shared values in a society is known as",
+    "option": [
+      "individualism.",
+      "value added voting.",
+      "populism.",
+      "political culture.",
+      "collectivism."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 75,
+    "question": "According to G.K. Chesterston, the United States is the only country in the world that isfounded on",
+    "option": [
+      "heredity.",
+      "a creed.",
+      "isolationism.",
+      "civic virtue.",
+      "religious principles."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 76,
+    "question": "During the American Revolution, Patrick Henry said",
+    "option": [
+      "  We fight for truth, justice, and the American way!",
+      "  Give me liberty or give me death.",
+      "  I regret that I have but one life to give for my country.",
+      "  Our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
+      "  Live free or die."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 77,
+    "question": "According to Thomas Jefferson, which of the following is an inalienable right?",
+    "option": ["Liberty", "Taxes", "Justice", "Jurisprudence", "Incontinence"],
+    "answer": 0
+  },
+  {
+    "id": 78,
+    "question": "The Declaration of Independence says that   all men are created equal.   Which aspect of theAmerican creed does this suggest?",
+    "option": [
+      "Individualism",
+      "Egalitarianism",
+      "Liberty",
+      "Capitalism",
+      "Populism"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 79,
+    "question": "One of the primary reasons for the comparatively small scope of American government is",
+    "option": [
+      "liberalism.",
+      "pluralism.",
+      "judicial review.",
+      "capitalism.",
+      "individualism."
+    ],
+    "answer": 4
+  },
+  {
+    "id": 80,
+    "question": "According to Frederick Jackson Turner, the existence of the frontier in American history mostdirectly resulted in",
+    "option": [
+      "the abolition of slavery.",
+      "a strong preference for limited government.",
+      "the environmental movement.",
+      "the space program.",
+      "the civil rights movement."
+    ],
+    "answer": 1
+  }
+]
