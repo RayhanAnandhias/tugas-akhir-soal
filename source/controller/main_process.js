@@ -70,7 +70,9 @@ exports.processMain = async (req, res, next) => {
       );
     }
 
-    const urlSoal = `http://${process.env.TA_HOST}/soal/${fileZipName}`;
+    const urlSoal = `http://${process.env.TA_HOST}${
+      process.env.TA_PORT ? `:` + process.env.TA_PORT : ``
+    }/soal/${fileZipName}`;
 
     res.status(200).json({
       message: 'Berhasil melakukan simulasi Fisher Yates + Graph Coloring',
