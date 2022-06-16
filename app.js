@@ -44,9 +44,9 @@ app.use('*', (req, res) => {
 
 const start = async () => {
   try {
-    app.listen(process.env.TA_PORT, () => {
+    app.listen(3000, () => {
       console.log(
-        `Listening to http://${process.env.TA_HOST}:${process.env.TA_PORT}`
+        `Listening to http://${process.env.TA_HOST}`
       );
     });
   } catch (e) {
