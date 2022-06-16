@@ -187,10 +187,10 @@ exports.generateTemplate = async (req, res, next) => {
       email
     );
 
-    // fs.unlink(filePath, (err) => {
-    //   if (err) throw err;
-    //   console.log(`${fileName} was deleted`);
-    // });
+    fs.unlink(filePath, (err) => {
+      if (err) throw err;
+      console.log(`${fileName} was deleted`);
+    });
 
     //response message
     res.status(200).json({
