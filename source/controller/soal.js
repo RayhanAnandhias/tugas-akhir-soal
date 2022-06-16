@@ -5,40 +5,157 @@ const {
   Table,
   TableCell,
   TableRow,
-  WidthType
+  WidthType,
+  TextRun
 } = require('docx');
 const fs = require('fs');
 const mailer = require('../util/mail');
 const path = require('path');
 
 const columnWidth = [612, 2091, 6111];
+const columnWidthPernyataan = [1610, 7222];
 
 exports.generateTemplate = async (req, res, next) => {
   try {
-    const { jumlahSoal, email } = req.body;
+    const { soal, email } = req.body;
     const jumlahPilihan = 5;
     const tabel = [];
     const pilihan = [];
 
-    console.log('Jumlah pilihan adalah ' + jumlahPilihan);
+    tabel.push(
+      new Paragraph({
+        children: [
+          new TextRun({
+            text: `Jangan ubah teks tulisan yang diberi sorotan warna kuning !`,
+            bold: true
+          })
+        ],
+        spacing: {
+          after: 200
+        }
+      })
+    );
+
     for (let j = 0; j < jumlahPilihan; j++) {
       pilihan.push(
         createRow(
           ``,
-          `${String.fromCharCode(65 + j)}`,
+          {
+            children: [
+              new TextRun({
+                text: `${String.fromCharCode(65 + j)}`,
+                highlight: 'yellow'
+              })
+            ]
+          },
           `<Tulis opsi jawaban ${String.fromCharCode(65 + j)}>`
         )
       );
     }
-    console.log('Jumlah soal adalah ' + jumlahSoal);
-    for (let i = 0; i < jumlahSoal; i++) {
+
+    const recordDiketahui = [];
+
+    for (let objSoal of soal) {
+      if (objSoal.pernyataan !== 0) {
+        if (!recordDiketahui.includes(objSoal.pernyataan)) {
+          tabel.push(
+            new Table({
+              columnWidths: columnWidthPernyataan,
+              rows: [
+                createRowDiketahui(
+                  {
+                    children: [
+                      new TextRun({
+                        text: 'No Pernyataan',
+                        highlight: 'yellow'
+                      })
+                    ]
+                  },
+                  {
+                    children: [
+                      new TextRun({
+                        text: `${objSoal.pernyataan}`,
+                        highlight: 'yellow'
+                      })
+                    ]
+                  }
+                ),
+                createRowDiketahui(
+                  {
+                    children: [
+                      new TextRun({
+                        text: 'Pernyataan',
+                        highlight: 'yellow'
+                      })
+                    ]
+                  },
+                  `<Tulis Pernyataan Soal di sini>`
+                )
+              ]
+            })
+          );
+          tabel.push(new Paragraph(''));
+          recordDiketahui.push(objSoal.pernyataan);
+        }
+      }
+
       tabel.push(
         new Table({
           columnWidths: columnWidth,
           rows: [
-            createRow(`${i + 1}`, 'Pertanyaan', '<Tulis pertanyaan di sini>'),
+            createRow(
+              {
+                children: [
+                  new TextRun({
+                    text: `${objSoal.id}`,
+                    highlight: 'yellow'
+                  })
+                ]
+              },
+              {
+                children: [
+                  new TextRun({
+                    text: `Pertanyaan`,
+                    highlight: 'yellow'
+                  })
+                ]
+              },
+              '<Tulis pertanyaan di sini>'
+            ),
             ...pilihan,
-            createRow(``, 'Kunci', '<Tulis kunci jawaban (abjad nya saja)>')
+            createRow(
+              ``,
+              {
+                children: [
+                  new TextRun({
+                    text: `Kunci`,
+                    highlight: 'yellow'
+                  })
+                ]
+              },
+              '<Tulis kunci jawaban (abjad nya saja)>'
+            ),
+            createRow(
+              ``,
+              {
+                children: [
+                  new TextRun({
+                    text: `Pernyataan Terkait`,
+                    highlight: 'yellow'
+                  })
+                ]
+              },
+              {
+                children: [
+                  new TextRun({
+                    text: `${
+                      objSoal.pernyataan !== 0 ? objSoal.pernyataan : `-`
+                    }`,
+                    highlight: 'yellow'
+                  })
+                ]
+              }
+            )
           ]
         })
       );
@@ -70,10 +187,10 @@ exports.generateTemplate = async (req, res, next) => {
       email
     );
 
-    fs.unlink(filePath, (err) => {
-      if (err) throw err;
-      console.log(`${fileName} was deleted`);
-    });
+    // fs.unlink(filePath, (err) => {
+    //   if (err) throw err;
+    //   console.log(`${fileName} was deleted`);
+    // });
 
     //response message
     res.status(200).json({
@@ -109,6 +226,31 @@ const createRow = (contentCol1, contentCol2, contentCol3) => {
             type: WidthType.DXA
           },
           children: [new Paragraph(contentCol3)]
+        })
+      ]
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const createRowDiketahui = (contentCol1, contentCol2) => {
+  try {
+    return new TableRow({
+      children: [
+        new TableCell({
+          width: {
+            size: columnWidthPernyataan[0],
+            type: WidthType.DXA
+          },
+          children: [new Paragraph(contentCol1)]
+        }),
+        new TableCell({
+          width: {
+            size: columnWidthPernyataan[1],
+            type: WidthType.DXA
+          },
+          children: [new Paragraph(contentCol2)]
         })
       ]
     });

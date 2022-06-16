@@ -2,11 +2,10 @@ const { body } = require('express-validator');
 
 const generateTemplateValidator = () => {
   return [
-    body('jumlahSoal')
+    body('soal')
       .exists()
-      .withMessage('jumlahSoal tidak boleh kosong')
-      .isNumeric()
-      .withMessage('jumlah soal harus bertipe number'),
+      .isArray()
+      .withMessage('soal harus dalam bentuk array'),
     body('email')
       .trim()
       .exists()
