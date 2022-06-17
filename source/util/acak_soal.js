@@ -1,5 +1,4 @@
-const shuffle = require("./fisher-yates.js");
-
+const shuffle = require('./fisher-yates.js');
 
 // Melakukan Inisiasi Paket sebanyak jumlah N butir soal
 const inisiasiPaket = (jumlahButir) => {
@@ -13,8 +12,13 @@ const inisiasiPaket = (jumlahButir) => {
 // Melakukan Shuffle Soal sebanyak jumlah paket yang diperlukan.
 const shuffleSoalNTimes = (times, soal) => {
   const arrayPaketSoal = [];
+
   for (let i = 0; i < times; i++) {
-    arrayPaketSoal.push(shuffle(soal));
+    let soalCollection = [...soal];
+    for (let groupSoal of soalCollection) {
+      groupSoal.soal = shuffle(groupSoal.soal);
+    }
+    arrayPaketSoal.push(shuffle(soalCollection));
   }
   return arrayPaketSoal;
 };
@@ -76,10 +80,10 @@ const hitungRatarataKeunikan = (listPaket, isUnik) => {
     total += listKeunikan[i];
   }
   return {
-    totalKeunikan : total / listKeunikan.length,
+    totalKeunikan: total / listKeunikan.length,
     listKeunikan
-  }
-}
+  };
+};
 
 const createListOfListPaket = (soalList, paketLength, listLength) => {
   const listOfPaket = [];
@@ -87,61 +91,85 @@ const createListOfListPaket = (soalList, paketLength, listLength) => {
     listOfPaket.push(shuffleSoalNTimes(paketLength, soalList));
   }
   return listOfPaket;
-}
-
+};
 
 const simulateOnce = (panjangSoal, jumlahPaket) => {
   const paketAsli = inisiasiPaket(panjangSoal);
   const listOfPaket = shuffleSoalNTimes(jumlahPaket, paketAsli);
-  const nilaiKeunikan = hitungKeunikan(listOfPaket, (soal1, soal2) => soal1 == soal2);
+  const nilaiKeunikan = hitungKeunikan(
+    listOfPaket,
+    (soal1, soal2) => soal1 == soal2
+  );
   return {
     nilaiKeunikan,
     hasilAcak: listOfPaket
-    
-  }
-}
+  };
+};
 
 const simulateNTimes = (panjangSoal, jumlahPaket, jumlahPercobaan) => {
   const paketAsli = inisiasiPaket(panjangSoal);
-  const listOfListPaket = createListOfListPaket(paketAsli, jumlahPaket, jumlahPercobaan);
-  const dataKeunikan = hitungRatarataKeunikan(listOfListPaket, (soal1, soal2) => soal1 == soal2);
+  const listOfListPaket = createListOfListPaket(
+    paketAsli,
+    jumlahPaket,
+    jumlahPercobaan
+  );
+  const dataKeunikan = hitungRatarataKeunikan(
+    listOfListPaket,
+    (soal1, soal2) => soal1 == soal2
+  );
   return {
     dataKeunikan
   };
-}
+};
 
 const acakSoal = (listSoal, jumlahPaket) => {
   const listPaket = shuffleSoalNTimes(jumlahPaket, listSoal);
-  // for (let i = 0; i < jumlahPaket; i++) {
-  //   listPaket.push(shuffle(listSoal));
-  // }
-  const persentaseKeunikan = hitungKeunikan(listPaket, (soal1, soal2) => soal1.id == soal2.id);
+
   const listPaketNomor = [];
-  listPaket.forEach(paket => {
-    const listNomor = [];
-    paket.forEach( soal => {
-      listNomor.push(soal.id)
-    })
+  const listPaketSoal = [];
+  for (let paket of listPaket) {
+    let listNomor = [];
+    let listSoal = [];
+    for (let groupSoal of paket) {
+      for (let butirSoal of groupSoal.soal) {
+        listNomor.push(butirSoal.id);
+        listSoal.push(butirSoal);
+      }
+    }
     listPaketNomor.push(listNomor);
-  })
+    listPaketSoal.push(listSoal);
+  }
+
+  const persentaseKeunikan = hitungKeunikan(
+    listPaketSoal,
+    (soal1, soal2) => soal1.id == soal2.id
+  );
+
   return {
     persentaseKeunikan,
     listPaketNomor,
     listPaket
-  }
-}
+  };
+};
 
 const acakSoalNTimes = (listSoal, jumlahPaket, jumlahPercobaan) => {
-  const listOfListPaket = createListOfListPaket(listSoal, jumlahPaket, jumlahPercobaan);
-  const persentaseKeunikan = hitungRatarataKeunikan(listOfListPaket, (soal1, soal2) => soal1.id == soal2.id); 
+  const listOfListPaket = createListOfListPaket(
+    listSoal,
+    jumlahPaket,
+    jumlahPercobaan
+  );
+  const persentaseKeunikan = hitungRatarataKeunikan(
+    listOfListPaket,
+    (soal1, soal2) => soal1.id == soal2.id
+  );
   return {
     dataKeunikan: persentaseKeunikan
   };
-}
+};
 
 module.exports = {
   simulateOnce,
   simulateNTimes,
   acakSoal,
   acakSoalNTimes
-}
+};

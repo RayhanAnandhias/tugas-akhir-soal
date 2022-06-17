@@ -1,19 +1,14 @@
-const {
-  Document,
-  Packer,
-  Paragraph,
-  Table,
-  TableCell,
-  TableRow,
-  WidthType,
-  TextRun
-} = require('docx');
+const { Document, Packer, Paragraph, Table, TextRun } = require('docx');
 const fs = require('fs');
 const mailer = require('../util/mail');
 const path = require('path');
 
-const columnWidth = [612, 2091, 6111];
-const columnWidthPernyataan = [1610, 7222];
+const {
+  columnWidth,
+  columnWidthPernyataan,
+  createRow,
+  createRowDiketahui
+} = require('../util/docxToJsonReader');
 
 exports.generateTemplate = async (req, res, next) => {
   try {
@@ -199,62 +194,5 @@ exports.generateTemplate = async (req, res, next) => {
     });
   } catch (error) {
     next(error);
-  }
-};
-
-const createRow = (contentCol1, contentCol2, contentCol3) => {
-  try {
-    return new TableRow({
-      children: [
-        new TableCell({
-          width: {
-            size: columnWidth[0],
-            type: WidthType.DXA
-          },
-          children: [new Paragraph(contentCol1)]
-        }),
-        new TableCell({
-          width: {
-            size: columnWidth[1],
-            type: WidthType.DXA
-          },
-          children: [new Paragraph(contentCol2)]
-        }),
-        new TableCell({
-          width: {
-            size: columnWidth[2],
-            type: WidthType.DXA
-          },
-          children: [new Paragraph(contentCol3)]
-        })
-      ]
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-const createRowDiketahui = (contentCol1, contentCol2) => {
-  try {
-    return new TableRow({
-      children: [
-        new TableCell({
-          width: {
-            size: columnWidthPernyataan[0],
-            type: WidthType.DXA
-          },
-          children: [new Paragraph(contentCol1)]
-        }),
-        new TableCell({
-          width: {
-            size: columnWidthPernyataan[1],
-            type: WidthType.DXA
-          },
-          children: [new Paragraph(contentCol2)]
-        })
-      ]
-    });
-  } catch (error) {
-    console.log(error);
   }
 };

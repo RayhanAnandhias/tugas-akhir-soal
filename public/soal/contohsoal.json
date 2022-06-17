@@ -1,217 +1,242 @@
 [
   {
     "id": 1,
-    "question": "Economics deals primarily with the concept of",
-    "option": ["change.", "power.", "poverty.", "scarcity."],
+    "question": "There is a tremendous gap between youth and the elderly in all of the following EXCEPT",
+    "option": [
+      "political knowledge.",
+      "political participation.",
+      "political interest.",
+      "volunteering.",
+      "media use."
+    ],
     "answer": 3
   },
   {
     "id": 2,
-    "question": "Scarcity exists when",
+    "question": "Political knowledge",
     "option": [
-      "the price of a good rises.",
-      "society can meet the wants of every individual.",
-      "there is less of a good or resource available than people wish to have.",
-      "there is less than an infinite amount of a resource or good."
+      "is greater among youth than the elderly.",
+      "fosters political tolerance.",
+      "is not that important in a democracy.",
+      "is generally high in the United States.",
+      "none of the above"
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 3,
-    "question": "Economics is defined as the study of",
+    "question": "Voter turnout matters because",
     "option": [
-      "how society manages its scarce resources.",
-      "business.",
-      "central planning.",
-      "government regulation."
-    ],
-    "answer": 0
-  },
-  {
-    "id": 4,
-    "question": "A good definition of equity would be",
-    "option": [
-      "efficiency.",
-      "eliminating extreme affluence.",
-      "fairness.",
-      "everyone receiving the same income."
+      "federal funds are allocated on the basis of the number of voters in a congressional district.",
+      "better candidates are selected when more people vote.",
+      "politicians pay more attention to those who vote than to those who do not vote.",
+      "it makes citizens feel better.",
+      "it makes our country look better."
     ],
     "answer": 2
   },
   {
-    "id": 5,
-    "question": "When government policies are being designed,",
+    "id": 4,
+    "question": "Government is defined as the",
     "option": [
-      "increasing efficiency usually results in more equity.",
-      "there is usually a tradeoff between equity and efficiency.",
-      "equity can usually be achieved without an efficiency loss.",
-      "equity and efficiency goals are usually independent of each other."
+      "organization that brings problems to the attention of public officials.",
+      "body that is concerned with economic problems while leaving social problems to other institutions of society.",
+      "agency that implements policies that have been enacted by other institutions of the political system.",
+      "executive branch and its agencies.",
+      "institutions and processes through which public policies are made for society."
     ],
-    "answer": 1
+    "answer": 4
+  },
+  {
+    "id": 5,
+    "question": "The policymaking institutions of the American national government include all of thefollowing EXCEPT",
+    "option": [
+      "the Supreme Court.",
+      "the presidency.",
+      "political parties.",
+      "Congress.",
+      "the Senate."
+    ],
+    "answer": 2
   },
   {
     "id": 6,
-    "question": "The opportunity cost of an item is",
+    "question": "One advantage of the Internet for democracy is that it",
     "option": [
-      "what you give up to get that item.",
-      "always equal to the dollar value of the item.",
-      "always less than the dollar value of the item.",
-      "the number of hours needed to earn the money to buy it."
+      "provides less information than newspapers.",
+      "makes it easy to avoid political topics.",
+      "makes it easier for citizens to communicate directly with government.",
+      "will provide more political information to political elites.",
+      "none of the above"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 7,
-    "question": "Ryan spends an hour studying instead of going for a bike ride. The opportunity cost to him of studying is",
+    "question": "Things that are indivisible, nonexclusive, and that everyone can share are called",
     "option": [
-      "the improvement in his grades from studying for the hour.",
-      "the enjoyment and exercise he would have received had he gone for a bike ride.",
-      "the difference between the improvement in his grades from studying minus the enjoyment of a bike ride.",
-      "zero. Since Ryan chose to study rather than to ride his bike, the value of studying must have been greater than the value of the bike ride."
+      "intangible property.",
+      "socialized.",
+      "community property.",
+      "communist.",
+      "public goods."
     ],
-    "answer": 1
+    "answer": 4
   },
   {
     "id": 8,
-    "question": "A rational decision maker takes an action only if the",
+    "question": "Governments in the modern world, whether democratic or not, are similar in doing all of thefollowing EXCEPT",
     "option": [
-      "marginal benefit is greater than the marginal cost.",
-      "average benefit is greater than the average cost.",
-      "marginal benefit is less than the marginal cost.",
-      "marginal benefit is greater than both the average cost and the marginal cost."
+      "protecting citizens ¹ civil liberties.",
+      "maintaining a national defense.",
+      "providing public goods.",
+      "collecting taxes.",
+      "providing public services."
     ],
     "answer": 0
   },
   {
     "id": 9,
-    "question": "A marginal change is a",
+    "question": "A public good is defined as",
     "option": [
-      "long-term trend.",
-      "change for the worse.",
-      "small incremental adjustment.",
-      "large, significant adjustment."
+      "something in which any member of society can share.",
+      "something provided by the government that cannot be provided by the private sector.",
+      "a choice that government makes in response to a political issue.",
+      "a public policy that is good for the nation as a whole.",
+      "all of the above"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "question": "Which of the following statements about public goods is FALSE?",
+    "option": [
+      "The government usually provides public goods.",
+      "Public goods are things that everyone can share.",
+      "Individuals have powerful incentives to provide public goods.",
+      "Public goods are not profitable.",
+      "Public goods are indivisible and nonexclusive."
     ],
     "answer": 2
   },
   {
-    "id": 10,
-    "question": "Economists understand that people respond to",
-    "option": [
-      "the wishes of policymakers.",
-      "tax breaks, but not tax hikes.",
-      "threats more than rewards.",
-      "incentives."
-    ],
-    "answer": 3
-  },
-  {
     "id": 11,
-    "question": "Which is the most accurate statement about trade?",
+    "question": "All governments",
     "option": [
-      "Trade can make every nation better off.",
-      "Trade makes some nations better off and others worse off.",
-      "Trade helps rich nations and hurts poor nations.",
-      "Trading for a good can make a nation better off only if the nation cannot produce that good."
+      "provide public goods and socialize citizens into the political and social system.",
+      "ensure safety on the high seas and promote free enterprise.",
+      "maintain national parks and a national defense.",
+      "guarantee a capitalist economy and collect taxes.",
+      "hold elections."
     ],
     "answer": 0
   },
   {
     "id": 12,
-    "question": "If Canada is better than the United States at producing hockey sticks, but the United States is better than Canada at producing roller blades, the United States should",
+    "question": "All governments",
     "option": [
-      "put a quota on the amount of Canadian hockey sticks imported.",
-      "\tsubsidize its hockey stick industry so that it can compete with Canadian hockey sticks.",
-      "sell roller blades to Canada, and buy Canadian hockey sticks.",
-      "impose a tariff on Canadian hockey sticks in order to protect jobs in the U.S. roller blade industry."
-    ],
-    "answer": 2
-  },
-  {
-    "id": 13,
-    "question": "In a market economy, economic activity is guided by",
-    "option": [
-      "the government.",
-      "corporations.",
-      "central planners.",
-      "prices."
+      "have written constitutions.",
+      "are elected.",
+      "have a legislature.",
+      "provide services.",
+      "have a president."
     ],
     "answer": 3
   },
   {
-    "id": 14,
-    "question": "One advantage market economies have over central planning is that market economies",
+    "id": 13,
+    "question": "Which of the following statements about taxes is TRUE?",
     "option": [
-      "solve the problem of scarcity.",
-      "are more efficient.",
-      "establish government economic control.",
-      "provide an equal distribution of goods and services to consumers."
+      "One out of every three dollars earned by an American citizen is used to pay taxes.",
+      "Despite the image presented by the media, survey data reveal that Americans feel they are getting their money's worth for the taxes they pay.",
+      "About one-tenth of the average American citizen's salary goes to taxes.",
+      "The tax burden in the United States is higher than in most other democratic nations.",
+      "All of these are true."
     ],
-    "answer": 1
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "An interest group so single-minded that its members often vote on only one issue, ignoring apolitician's stand on everything else, is known as",
+    "option": [
+      "a one-issue group.",
+      "a uni-issue group.",
+      "a hot-button group.",
+      "a single-issue group.",
+      "a mono-issue group."
+    ],
+    "answer": 3
   },
   {
     "id": 15,
-    "question": "The term market failure refers to",
+    "question": "When compared with the rest of the world, America has a relatively low",
     "option": [
-      "an unsuccessful advertising campaign.",
-      "a situation in which the market on its own fails to allocate resources efficiently.",
-      "a situation in which competition among firms becomes ruthless.",
-      "a firm which is forced out of business because of losses."
+      "number of offices up for election.",
+      "number of candidates who seek office.",
+      "frequency of elections.",
+      "voter turnout in elections.",
+      "all of the above"
     ],
-    "answer": 1
+    "answer": 3
   },
   {
     "id": 16,
-    "question": "An externality is the impact of",
+    "question": "Many politicians believe that single-issue groups",
     "option": [
-      "a person’s actions on that person’s well-being.",
-      "society’s decisions on the well-being of society.",
-      "one person’s actions on the well-being of a bystander.",
-      "society’s decisions on the well-being of one person."
+      "stimulate the political system to solve public policy problems.",
+      "are essential to democracy.",
+      "complicate efforts to seek the middle ground on various issues.",
+      "play a unifying role in American politics.",
+      "do not affect policymaking."
     ],
     "answer": 2
   },
   {
     "id": 17,
-    "question": "If a copper refinery does NOT bear the entire cost of the smoke it emits, it will",
+    "question": "Politics is defined by Harold Lasswell as",
     "option": [
-      "\temit too much smoke.",
-      "\temit lower levels of smoke.",
-      "\temit an acceptable level of smoke.",
-      "\teliminate all smoke so as to avoid the entire cost of the smoke."
+      "conflict in society.",
+      "the exercise of power.",
+      "the resolution of conflict in a way that serves the public.",
+      "who gets what, when, and how.",
+      "a course of action to solve a problem."
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 18,
-    "question": "The two best reasons for a government to intervene in a market are to",
+    "question": "Single-issue groups",
     "option": [
-      "promote equity and to raise revenues.",
-      "promote equity and to promote efficiency.",
-      "promote efficiency and to raise revenues.",
-      "raise revenues and to promote stability."
-    ],
-    "answer": 1
-  },
-  {
-    "id": 19,
-    "question": "Market power refers to the",
-    "option": [
-      "power of the government to regulate a market.",
-      "relative importance of a market to the overall economy.",
-      "power of a single person (or small group of people) to unduly influence market prices.",
-      "ability of a person or group of people to successfully market new products."
+      "are rapidly losing prominence in American politics.",
+      "usually run their own candidates for public office.",
+      "have little sympathy for compromising.",
+      "help facilitate the construction of a cohesive national public policy.",
+      "are highly regarded by political scientists for their contributions to democracy."
     ],
     "answer": 2
   },
   {
-    "id": 20,
-    "question": "The income of a typical worker in a country is most closely linked to which of the following?",
+    "id": 19,
+    "question": "Which of the following statements best describes voter turnout in the United States?",
     "option": [
-      "population",
-      "government policies",
-      "labor unions",
-      "productivity"
+      "Among democratic nations, the United States leads the world in voter turnout.",
+      "Voter turnout in the United States is constitutionally mandated.",
+      "Voters are usually a microcosm of the entire body of American citizens.",
+      "Most American voters consider politics as critical to their interests.",
+      "The United States has one of the lowest voter turnout rates in the world."
     ],
-    "answer": 3
+    "answer": 4
+  },
+  {
+    "id": 20,
+    "question": "The list of problems to which political leaders are paying serious attention is a(n)",
+    "option": [
+      "problem set.",
+      "policy agenda.",
+      "issue constellation.",
+      "legislative package.",
+      "none of the above"
+    ],
+    "answer": 1
   }
 ]
