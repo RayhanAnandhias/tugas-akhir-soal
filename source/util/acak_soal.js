@@ -46,7 +46,7 @@ const hitungKeunikan = (listPaket, isUnik) => {
       }
     }
   }
-  const keunikan = (1 - a / n) * 100;
+  const keunikan = (1 - a / n).toPrecision() * 100;
   return keunikan;
 };
 
@@ -142,7 +142,7 @@ const acakSoal = (listSoal, jumlahPaket) => {
 
   const persentaseKeunikan = hitungKeunikan(
     listPaketSoal,
-    (soal1, soal2) => soal1.id == soal2.id
+    (soal1, soal2) => soal1.id === soal2.id
   );
 
   return {
