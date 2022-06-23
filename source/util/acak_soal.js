@@ -152,6 +152,25 @@ const acakSoal = (listSoal, jumlahPaket) => {
   };
 };
 
+const shuffleSoal = (listSoal, jumlahPaket) => {
+  const listPaket = shuffleSoalNTimes(jumlahPaket, listSoal);
+
+  const listPaketNomor = [];
+  for (let paket of listPaket) {
+    let listNomor = [];
+    let listSoal = [];
+    for (let groupSoal of paket) {
+      for (let butirSoal of groupSoal.soal) {
+        listNomor.push(butirSoal.id);
+        listSoal.push(butirSoal);
+      }
+    }
+  }
+
+
+  return ;
+}
+
 const acakSoalNTimes = (listSoal, jumlahPaket, jumlahPercobaan) => {
   const listOfListPaket = createListOfListPaket(
     listSoal,
@@ -171,5 +190,6 @@ module.exports = {
   simulateOnce,
   simulateNTimes,
   acakSoal,
-  acakSoalNTimes
+  acakSoalNTimes,
+  shuffleSoalNTimes
 };

@@ -17,11 +17,11 @@ const Digraph = require("./graph");
 const graphModelling = (baris, kolom, jarakBaris, jarakKolom) => {
   const graph = new Digraph(baris, kolom, jarakBaris, jarakKolom);
 
-  for (let i = 0; i < baris * kolom; i++) {
-    for (let j = 0; j < baris * kolom; j++) {
-      graph.addEdge(i, j);
-    }
-  }
+  // for (let i = 0; i < baris * kolom; i++) {
+  //   for (let j = 0; j < baris * kolom; j++) {
+  //     graph.addEdge(i, j);
+  //   }
+  // }
 
   return graph;
 };

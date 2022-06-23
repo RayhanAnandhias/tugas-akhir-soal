@@ -11,6 +11,11 @@ class Digraph {
     this.jarakBaris = jarakBaris;
     this.jarakKolom = jarakKolom;
     this.nodes = new Map();
+    for (let i = 0; i < baris * kolom; i++) {
+      for (let j = 0; j < baris * kolom; j++) {
+        this.addEdge(i, j);
+      }
+    }
   }
 
   addVertex(keyIndex) {
@@ -27,7 +32,7 @@ class Digraph {
     const sourceNode = this.addVertex(source);
     const destNode = this.addVertex(destination);
 
-    if (this.#checkSyarat(source, destination) === true) {
+    if (this.checkSyarat(source, destination)) {
       sourceNode.addAdjacent(destNode);
       return [sourceNode, destNode];
     } else {
@@ -35,7 +40,7 @@ class Digraph {
     }
   }
 
-  #checkSyarat(source, destination) {
+  checkSyarat(source, destination) {
     const kolomSource = this.getKolom(source);
     const barisSource = this.getBaris(source);
     const kolomDest = this.getKolom(destination);

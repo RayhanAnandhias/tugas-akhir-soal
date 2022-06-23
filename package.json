@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node -r dotenv/config app.js",
     "dev": "nodemon -r dotenv/config app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "nodemonConfig": {
     "ignore": [
@@ -29,6 +29,7 @@
     "cors": "^2.8.5",
     "docx": "^7.3.0",
     "dotenv": "^16.0.1",
+    "esprima": "^4.0.1",
     "express": "^4.17.3",
     "express-validator": "^6.14.0",
     "googleapis": "^101.0.0",
@@ -39,6 +40,7 @@
     "nodemailer-express-handlebars": "^5.0.0",
     "seed-random": "^2.2.0",
     "strip-html-comments": "^1.0.0",
+    "styx": "^0.2.1",
     "tabletojson": "^2.0.7"
   },
   "devDependencies": {
